@@ -3,4 +3,4 @@ begin
   select sal into v_sal from emp where empno = v_empno;
   
 end testProcedure;
-/
+

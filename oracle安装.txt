@@ -1,0 +1,24 @@
+1.本机安装Oracle服务端
+	Oracle主目录名：E:\app\zzd19\product\11.2.0\dbhome_1
+	OCI库：E:\app\zzd19\product\11.2.0\dbhome_1\instantclient_11_2\oci.dll
+
+2.本机只装plsql客户端
+	Oracle主目录名：..\instantclient_11_2
+	OCI库：..\instantclient_11_2\oci.dll
+	
+3.Oracle主目录下面tnsnames.ora文件配置
+	network\admin\tnsnames.ora
+	
+4.tnsnames.ora文件配置
+ORCL =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = orcl)
+    )
+  )
+HOST主机名
+PORT端口
+SERVICE_NAME实例
+数据库填写，可以填写ORCL，也可以填写后面的
